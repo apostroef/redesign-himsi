@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Form Kritik Saran</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Merch">Merch</a></li>
+                <li><a href="#Feature">Feature</a></li>
+                <li class="right"><a href="#Feedback">Feedback</a></li>
+            </ul>
+        </div>
+        <div id="about-us" style="padding: 64px">
+            <div id="titleform">
+                <img id="icon1" src="iconoir_suggestion.png"  width="80" height="80">
+                <h1> Kritik & Saran</h1>
+            </div>
+            <div id="id-form">
+                <fieldset id="Identitas">
+                    <form>
+                        <label for="name" class="Name">Nama </label>
+                        <input type="text" id="name" name="name" mandatory="required"><br>
+                        <label for="akt" class="akt">Angkatan </label>
+                        <input list="akt" name="akt">
+                        <datalist id="akt" >
+                            <option value="Alumni">
+                            <option value="2020">
+                            <option value="2021">
+                            <option value="2022">
+                            <option value="2023">
+                            <option value="2024">
+                        </datalist><br>
+                        <label for="bidang" class="bidang">Untuk:</label>
+                        <input list="bidang" name="bidang">
+                        <datalist id="bidang">
+                            <option value="Kestari">
+                            <option value="Kestari">
+                        </datalist>
+                    </form>
+                </fieldset>
+            </div>
+            <fieldset>
+                <label>Kritik & Saran</label>
+                <textarea name="Kritik" rows="5" cols="40"></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </div>
+        
+    </body>
+</html>
